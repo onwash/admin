@@ -30,8 +30,7 @@ import LocationCityIcon from "@material-ui/icons/LocationCity";
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import NotListedLocationIcon from "@material-ui/icons/NotListedLocation";
 import BlockIcon from "@material-ui/icons/Block";
-import gql from "graphql-tag";
-import { useQuery, useMutation } from "@apollo/react-hooks";
+import { gql, useQuery, useMutation } from "@apollo/client";
 import WashGeneralSettingsElement from "./WashGeneralSettingsElement";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -262,7 +261,7 @@ const WashDesRowData: FC<any> = ({ rowData }) => {
     let washDescriptionInput = { ...rowData, [fieldKey]: value };
     delete washDescriptionInput.social;
     delete washDescriptionInput.region;
-    delete washDescriptionInput.tableData;
+    // delete washDescriptionInput.tableData;
     delete washDescriptionInput.__typename;
     const x = washDescriptionInput.options.map((i: any) => {
       return i.id;
@@ -458,14 +457,3 @@ const SwitchListSecondary: FC<options> = ({
 };
 
 export default WashDesRowData;
-// +adress: "Лабораторный пр., 20,"
-// coordinatesId: "5ec2b767613f1585b65b286d"
-// id: "5ec2b7a4613f1585b65b286e"
-// options: (2) [{…}, {…}]
-// postCount: 6
-// +region: {name: "Петербург", __typename: "Region"}
-// social: {raiting: 0, __typename: "WashDescriptionSocial"}
-// tableData: {id: 0, showDetailPanel: ƒ}
-// +uptime: "24/7"
-// washname: "Мойка на Лабораторном"
-// __typename: "WashDescription"

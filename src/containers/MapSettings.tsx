@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 
-import gql from "graphql-tag";
-import { useQuery } from "@apollo/react-hooks";
+import { gql, useQuery } from "@apollo/client";
 
 import { MapSettingsCard } from "../components/MapSettingCard";
 import { makeStyles } from "@material-ui/core/styles";

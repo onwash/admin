@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import MaterialTable from "material-table";
-import { useQuery } from "@apollo/react-hooks";
+import { useQuery } from "@apollo/client";
 import { GET_ALL_USERS } from "./../GraphQl";
 import Test from "./Test";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";

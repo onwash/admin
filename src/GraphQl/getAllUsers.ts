@@ -1,22 +1,22 @@
-import gql from 'graphql-tag'
+import { gql } from "@apollo/client";
 
 export default gql`
-  query getAllUsers{
-    getAllUsers{
+  query getAllUsers {
+    getAllUsers {
       role
       email
       login
       phonenumber
       comments
       created_at
-      region{
+      region {
         name
       }
-      settings{
-        mapSettings{
+      settings {
+        mapSettings {
           selected
         }
       }
     }
   }
-`
+`;

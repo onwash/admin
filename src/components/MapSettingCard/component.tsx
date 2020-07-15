@@ -19,8 +19,7 @@ import PanoramaFishEyeIcon from "@material-ui/icons/NotInterested";
 import EditIcon from "@material-ui/icons/Edit";
 
 import { MapOneSettigs } from "../../types";
-import gql from "graphql-tag";
-import { useMutation } from "@apollo/react-hooks";
+import { gql, useMutation } from "@apollo/client";
 import { GET_MAP_SETTINGS } from "../../containers/MapSettings";
 import { MapIconSelectModal } from "./../MapIconSelectModal";
 

@@ -1,9 +1,8 @@
-import gql from 'graphql-tag'
-
+import { gql } from "@apollo/client";
 
 export default gql`
   query {
-    me{
+    me {
       email
       login
       region {
@@ -13,6 +12,6 @@ export default gql`
         latitudeDelta
         longitudeDelta
       }
+    }
   }
-}
-`
+`;

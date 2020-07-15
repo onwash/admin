@@ -1,7 +1,6 @@
 import React, { FC, useState } from "react";
 import MaterialTable from "material-table";
-import { useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
+import { gql, useQuery } from "@apollo/client";
 import { WasheDescAddModal } from "../components/WasheDescAddModal";
 import { WashDesRowData } from "../components/WashDesRowData";
 import Err from "./../pages/404";
