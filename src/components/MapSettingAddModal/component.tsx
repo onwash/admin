@@ -7,8 +7,7 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { Formik } from "formik";
 import { Checkbox, TextField } from "@material-ui/core";
-import gql from "graphql-tag";
-import { useMutation } from "@apollo/react-hooks";
+import { gql, useMutation } from "@apollo/client";
 import { GET_MAP_SETTINGS } from "../../containers/MapSettings";
 
 const CREATE_MAP_SETTINGS = gql`
