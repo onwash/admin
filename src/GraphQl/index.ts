@@ -1,0 +1,7 @@
+export { default as GET_REGIONS_DEFAULT } from './getRegionsDefault'
+export { default as SET_SIGN_UP } from './setSignUp'
+export { default as GET_REGIONS } from './getRegion'
+export { default as SET_LOG_IN } from './setLogin'
+export { default as ME } from './me'
+export { default as GET_WASH_COORDINATES } from './getOnlyCoordinatesWash'
+export { default as GET_ALL_USERS } from './getAllUsers'

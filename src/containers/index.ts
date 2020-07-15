@@ -1,0 +1,5 @@
+export { default as UsersTab } from './Users'
+export { default as MapTab } from './Map'
+export { default as MapSetTab } from './MapSettings'
+export { default as CommentsTab } from './Comments'
+export { default as WashsTab } from './Washs'
